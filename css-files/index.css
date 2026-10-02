@@ -1,0 +1,12 @@
+.phone{
+    width: 402px;
+    max-width: 100%;
+    aspect-ratio: 402/874;
+    max-height: 100%;
+    background: #d9d9d9;
+    border-radius: 56px;
+    border: 10px solid #111;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
