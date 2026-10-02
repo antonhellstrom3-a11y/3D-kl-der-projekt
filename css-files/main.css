@@ -17,8 +17,7 @@
 summary{
     list-style: none;
     position:absolute;
-    top: 50px;
-    left: 30px;
+    align-items: flex-start;
     font-size: 30px;
     cursor: pointer;
 }
