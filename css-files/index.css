@@ -11,8 +11,28 @@
     flex-direction: column;
 }
 
+.app{
+    flex: 1;
+    background: #8fd05a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.status-bar{
+    height: 44px; 
+    flex: none;
+}
 
+.app-container{
+    position: absolute; top: 10px; left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 34px;
+    background: #111;
+    border-radius: 20px;
+    z-index: 2;
+}
 
 
 
@@ -97,6 +117,43 @@
 
 
 
+
+
+
+.feature-options{
+    margin-top: 44px;
+    width: 76%;
+    aspect-ratio: 5/8;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    cursor: grab;
+}
+
+.feature-options::-webkit-scrollbar{
+    display: none;
+}
+
+.slide{
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    background: #d9d9d9;
+    display: grid;
+    place-items: center;
+    font-size: 48px;
+    color:#9a9a9a; 
+    user-select: none;
+}
+
+.slide:nth-child(1){
+    background: #f5f5f5;
+}
+
+.slide:nth-child(2){
+    background: #e5e5e5;
+}
 
 .dot{
     display: flex;
@@ -104,13 +161,15 @@
     margin: 22px;
 }
 
-.dot i{
+.dot button{
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #d9d9d9;
+    background: #ff0000;
+    border: none;
+    cursor: pointer;
 }
 
-.dot i.active{
+.dot button.active{
     background: #111;
 }
