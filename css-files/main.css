@@ -1,0 +1,11 @@
+.mobile-nav{
+    display: flex;
+    flex-direction: column;
+}
+.mobile-nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    
+}
